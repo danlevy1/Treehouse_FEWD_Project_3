@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Newsletter</title>
+    <link
+        href="https://fonts.googleapis.com/css?family=Merriweather:300,400,700,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <header>
+        <h1 id="header-title">The Code Review</h1>
+    </header>
+    <main>
+        <section id="sign-up-info">
+
+            <h2 id="sign-up-title">Signup for our newsletter</h2>
+            <p id="sign-up-subtitle">Get the latest news on how your code is doing right
+                in your inbox</p>
+
+        </section>
+
+        <form action="#" method="POST">
+
+            <fieldset id="form-first-half">
+                <legend>Contact Information</legend>
+
+                <div>
+                    <label for="full-name">Full Name</label>
+                    <input type="text" name="full-name" id="full-name"
+                        placeholder="Required" required>
+                </div>
+
+                <div>
+                    <label for="email">Email Address</label>
+                    <input type="email" name="email" id="email" placeholder="Required"
+                        required>
+                </div>
+
+                <div>
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" name="phone" id="phone"
+                        placeholder="(123) 456-7890">
+                </div>
+
+                <div>
+                    <label for="street">Street Address</label>
+                    <input type="text" name="street" id="street"
+                        placeholder="123 Main Street">
+                </div>
+
+                <div>
+                    <label for="city">City</label>
+                    <input type="text" name="city" id="city" placeholder="New York, NY">
+                </div>
+
+                <div>
+                    <label for="state">State</label>
+                    <select name="state" id="state">
+                        <option value="" disabled selected>Choose State</option>
+                        <option value="ny">New York</option>
+                        <option value="fl">Florida</option>
+                        <option value="ca">California</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label for="zip">Zip Code</label>
+                    <input type="text" name="zip" id="zip" placeholder="12345">
+                </div>
+
+            </fieldset>
+
+            <fieldset id="form-second-half">
+
+                <legend>Newsletter</legend>
+                <h3>Select the newsletters you would like to receive</h3>
+
+                <div>
+                    <input type="checkbox" id="html-news" value="html"
+                        name="newsletter-sub">
+                    <label for="html-news">HTML News</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="css-news" value="css"
+                        name="newsletter-sub">
+                    <label for="css">CSS News</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="js-news" value="js" name="newsletter-sub">
+                    <label for="js">Javascript News</label>
+                </div>
+
+                <h3>Newsletter format</h3>
+
+                <div>
+                    <input type="radio" id="html-format" value="html"
+                        name="newsletter-format">
+                    <label for="html-format">HTML</label>
+                </div>
+
+                <div>
+                    <input type="radio" id="plain-text-format" value="plain-text"
+                        name="newsletter-format">
+                    <label for="plain-text-format">Plain text</label>
+                </div>
+
+                <label for="other-topics">Other topics you'd like to hear about</label>
+                <textarea name="other-topics" id="other-topics"
+                    placeholder="Ex. React, Vue"></textarea>
+
+                <button type="submit">Sign Up</button>
+
+            </fieldset>
+
+        </form>
+    </main>
+    <footer>
+        <p>Copyright The Code Review</p>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,315 @@
+/* ---------------------
+CSS RESETS
+--------------------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+    outline: none;
+}
+
+input,
+textarea,
+select {
+    border: none;
+}
+
+fieldset {
+    border: 0;
+}
+
+
+
+/* ---------------------
+DOCUMENT STYLES
+--------------------- */
+body,
+button,
+input,
+textarea {
+    font-family: 'Merriweather', serif;
+}
+
+h1 {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #fff;
+    word-spacing: .1em;
+}
+
+legend {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #2d3944;
+}
+
+h2 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #2d3944;
+}
+
+h3,
+label {
+    font-size: 1rem;
+    font-weight: 300;
+    color: #55687a;
+}
+
+p {
+    font-size: 0.9rem;
+    font-weight: 300;
+    color: #bec2c5;
+}
+
+
+
+/* ---------------------
+HEADER STYLES
+--------------------- */
+header {
+    background-color: #2d3944;
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#header-title {
+    text-transform: uppercase;
+}
+
+
+
+/* ---------------------
+MAIN STYLES
+--------------------- */
+main {
+    padding: 0 30px;
+}
+
+#sign-up-info {
+    padding-top: 30px;
+}
+
+#sign-up-info::after {
+    content: "";
+    display: block;
+    height: 4px;
+    margin-top: 30px;
+    border-top: 4px solid #2d3944;
+    border-bottom: 2px solid #2d3944;
+}
+
+#sign-up-title {
+    text-align: center;
+}
+
+#sign-up-subtitle {
+    text-align: center;
+    padding-top: 10px;
+}
+
+
+
+/* ---------------------
+FORM STYLES
+--------------------- */
+form {
+    padding-top: 20px;
+}
+
+#form-first-half label {
+    display: block;
+    padding: 20px 0 10px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #1d1d1d;
+    height: 50px;
+    background-color: #eff0f1;
+    border-radius: 6px;
+    width: 100%;
+    padding: 5px 20px;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+    border: 2px solid #46698b;
+    transition: border 100ms;
+}
+
+input::placeholder,
+textarea::placeholder {
+    font-size: .8rem;
+    font-weight: 300;
+    font-style: italic;
+    color: #adb2b7;
+    padding-right: 3px;
+}
+
+input::placeholder {
+    text-align: right;
+}
+
+textarea::placeholder {
+    text-align: left;
+}
+
+#form-first-half {
+    padding: 5px 0 40px;
+    border-bottom: 3px solid #000;
+}
+
+select {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #adb2b7;
+    height: 50px;
+    background-color: #eff0f1;
+    border-radius: 6px;
+    width: 100%;
+    padding: 5px 20px;
+}
+
+#zip {
+    width: 100px;
+}
+
+#form-second-half {
+    margin: 40px 0 20px;
+}
+
+#form-second-half h3 {
+    padding: 25px 0 15px;
+}
+
+#form-second-half div {
+    padding-top: 10px;
+}
+
+#form-second-half div:first-of-type {
+    padding-top: 0;
+}
+
+#form-second-half label {
+    padding-left: 10px;
+}
+
+#form-second-half input,
+#form-second-half label {
+    vertical-align: middle;
+}
+
+#form-second-half label[for="other-topics"] {
+    display: block;
+    padding: 25px 0 15px;
+}
+
+#form-second-half div:nth-of-type(4) {
+    padding-top: 0;
+}
+
+textarea {
+    resize: none;
+    height: 100px;
+}
+
+button {
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: white;
+    background-color: #4dbbb5;
+    width: 100%;
+    height: 60px;
+    margin-top: 30px;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+}
+
+footer {
+    height: 80px;
+    text-align: center;
+    background-color: #2d3944;
+}
+
+footer p {
+    padding-top: 30px;
+    color: #fff;
+    font-style: italic;
+}
+
+
+
+@media screen and (min-width: 769px) {
+
+    /* ---------------------
+    MAIN STYLES
+    --------------------- */
+    main {
+        padding: 0;
+        width: 60%;
+        margin: auto;
+    }
+
+    #sign-up-info {
+        padding-top: 50px;
+    }
+
+    #sign-up-info::after {
+        margin-top: 40px;
+    }
+
+
+
+    /* ---------------------
+    FORM STYLES
+    --------------------- */
+    form {
+        padding-top: 40px;
+    }
+
+    #form-first-half div {
+        padding-bottom: 20px;
+    }
+
+    #form-first-half div:first-of-type {
+        padding-top: 20px;
+    }
+
+    #form-first-half div:last-of-type {
+        padding-bottom: 0;
+    }
+
+    #form-first-half label,
+    #form-first-half input,
+    #form-first-half select {
+        display: inline-block;
+    }
+
+    #form-first-half label {
+        width: 140px;
+    }
+
+    #form-first-half input,
+    #form-first-half select {
+        width: calc(100% - 144px);
+    }
+
+    #form-first-half #zip {
+        width: 100px;
+    }
+}
